@@ -38,17 +38,18 @@ for i in range(len(x)):
     num+=(x[i]-x_mean)*(y[i]-y_mean)
     denum+=(x[i]-x_mean)**2
 m=num/denum
-print(m)
+print('Slope:',m)
 b=y_mean-m*x_mean
-print(b)
+print('Y-intercept:',b)
 y_pred=m*x+b
-print(y_pred)
+print('Predicted_Values:',y_pred)
 plt.scatter(x,y)
 plt.plot(x,y_pred,color='green')
 
+
 ```
 ## Output:
-![image](https://github.com/Adhithyaram29D/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393540/465a37ad-9abb-41a8-b38b-65c07e696cca)
+![image](https://github.com/Adhithyaram29D/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393540/830e3e42-7aa2-44f3-992d-380c120ddefd)
 
 
 ## Result:
