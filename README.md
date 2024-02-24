@@ -28,10 +28,12 @@ RegisterNumber:  212222230008
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-x=np.array(eval(input()))
-y=np.array(eval(input()))
+x=np.array(eval(input("Enter x values:")))
+y=np.array(eval(input("Enter y values:")))
 x_mean=np.mean(x)
+print("X_Mean_Value:",x_mean)
 y_mean=np.mean(y)
+print("Y_Mean_Value:",y_mean)
 num=0
 denum=0
 for i in range(len(x)):
@@ -45,11 +47,14 @@ y_pred=m*x+b
 print('Predicted_Values:',y_pred)
 plt.scatter(x,y)
 plt.plot(x,y_pred,color='green')
-
+plt.title("UNIVARIATE LINEAR REGRESSION")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
 
 ```
 ## Output:
-![image](https://github.com/Adhithyaram29D/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393540/b5cf2fe3-88d4-42dd-834d-0791da54bb37)
+![Screenshot 2024-02-24 093731](https://github.com/Adhithyaram29D/Find-the-best-fit-line-using-Least-Squares-Method/assets/119393540/15e113d4-a22b-49a0-93f2-6f76f865bf50)
 
 
 ## Result:
